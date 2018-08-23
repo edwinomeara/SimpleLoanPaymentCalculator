@@ -7,23 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		056C93757B0F262BD6D069FF /* Pods_LoanCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAE5D461AF49776B3E27DA2 /* Pods_LoanCalculator.framework */; };
+		F52136E920EAEFE500D034C3 /* SavedDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52136E820EAEFE500D034C3 /* SavedDataViewController.swift */; };
+		F52136ED20EB008D00D034C3 /* SavedDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52136EC20EB008D00D034C3 /* SavedDataTableViewCell.swift */; };
+		F52136F220ED336C00D034C3 /* TimesOpened+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52136F020ED336C00D034C3 /* TimesOpened+CoreDataClass.swift */; };
+		F52136F320ED336C00D034C3 /* TimesOpened+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52136F120ED336C00D034C3 /* TimesOpened+CoreDataProperties.swift */; };
+		F52136F620ED501B00D034C3 /* SavedData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52136F420ED501B00D034C3 /* SavedData+CoreDataClass.swift */; };
+		F52136F720ED501B00D034C3 /* SavedData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52136F520ED501B00D034C3 /* SavedData+CoreDataProperties.swift */; };
+		F53A588B20E28DBF005AA79E /* UserData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A588920E28DBF005AA79E /* UserData+CoreDataClass.swift */; };
+		F53A588C20E28DBF005AA79E /* UserData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A588A20E28DBF005AA79E /* UserData+CoreDataProperties.swift */; };
+		F53A588E20E2CFCF005AA79E /* TextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A588D20E2CFCF005AA79E /* TextFieldEffects.framework */; };
+		F53A589020E3136D005AA79E /* AmortizationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A588F20E3136D005AA79E /* AmortizationTableViewCell.swift */; };
+		F53A589620E55F94005AA79E /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A589520E55F94005AA79E /* GraphViewController.swift */; };
+		F53A589820E55FBF005AA79E /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A589720E55FBF005AA79E /* Charts.framework */; };
+		F55CE33220DF3E540076BFAF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55CE33120DF3E540076BFAF /* GradientView.swift */; };
+		F55CE33420DF40DA0076BFAF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55CE33320DF40DA0076BFAF /* Helpers.swift */; };
+		F566280D20E1B2B2003CD502 /* AmortizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F566280C20E1B2B2003CD502 /* AmortizationViewController.swift */; };
+		F566281120E27DEB003CD502 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F566281020E27DEB003CD502 /* PersistenceService.swift */; };
 		F5A2904020DC821B009E8A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2903F20DC821B009E8A6A /* AppDelegate.swift */; };
-		F5A2904220DC821B009E8A6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2904120DC821B009E8A6A /* ViewController.swift */; };
+		F5A2904220DC821B009E8A6A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2904120DC821B009E8A6A /* HomeViewController.swift */; };
 		F5A2904520DC821B009E8A6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2904320DC821B009E8A6A /* Main.storyboard */; };
 		F5A2904820DC821B009E8A6A /* LoanCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5A2904620DC821B009E8A6A /* LoanCalculator.xcdatamodeld */; };
 		F5A2904A20DC821D009E8A6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A2904920DC821D009E8A6A /* Assets.xcassets */; };
 		F5A2904D20DC821D009E8A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2904B20DC821D009E8A6A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F53A589420E54ED8005AA79E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8CAE5D461AF49776B3E27DA2 /* Pods_LoanCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoanCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EF0070642CC57566594596 /* Pods-LoanCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoanCalculator/Pods-LoanCalculator.release.xcconfig"; sourceTree = "<group>"; };
+		F52136E820EAEFE500D034C3 /* SavedDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataViewController.swift; sourceTree = "<group>"; };
+		F52136EC20EB008D00D034C3 /* SavedDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataTableViewCell.swift; sourceTree = "<group>"; };
+		F52136F020ED336C00D034C3 /* TimesOpened+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimesOpened+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F52136F120ED336C00D034C3 /* TimesOpened+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimesOpened+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F52136F420ED501B00D034C3 /* SavedData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F52136F520ED501B00D034C3 /* SavedData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SavedData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F53A588920E28DBF005AA79E /* UserData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F53A588A20E28DBF005AA79E /* UserData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F53A588D20E2CFCF005AA79E /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53A588F20E3136D005AA79E /* AmortizationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationTableViewCell.swift; sourceTree = "<group>"; };
+		F53A589520E55F94005AA79E /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		F53A589720E55FBF005AA79E /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55CE33120DF3E540076BFAF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F55CE33320DF40DA0076BFAF /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		F566280C20E1B2B2003CD502 /* AmortizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationViewController.swift; sourceTree = "<group>"; };
+		F566281020E27DEB003CD502 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		F5A2903C20DC821B009E8A6A /* LoanCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A2903F20DC821B009E8A6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F5A2904120DC821B009E8A6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5A2904120DC821B009E8A6A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F5A2904420DC821B009E8A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5A2904720DC821B009E8A6A /* LoanCalculator.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoanCalculator.xcdatamodel; sourceTree = "<group>"; };
 		F5A2904920DC821D009E8A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A2904C20DC821D009E8A6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A2904E20DC821D009E8A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F83E4757EDE27191AA660F12 /* Pods-LoanCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoanCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoanCalculator/Pods-LoanCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +80,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53A589820E55FBF005AA79E /* Charts.framework in Frameworks */,
+				F53A588E20E2CFCF005AA79E /* TextFieldEffects.framework in Frameworks */,
+				056C93757B0F262BD6D069FF /* Pods_LoanCalculator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A8F56B638CD0573B8BE440E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F83E4757EDE27191AA660F12 /* Pods-LoanCalculator.debug.xcconfig */,
+				C6EF0070642CC57566594596 /* Pods-LoanCalculator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E84F0530C5D6394EA69D119C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F53A589720E55FBF005AA79E /* Charts.framework */,
+				F53A588D20E2CFCF005AA79E /* TextFieldEffects.framework */,
+				8CAE5D461AF49776B3E27DA2 /* Pods_LoanCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F566280E20E1B2E2003CD502 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5A2904120DC821B009E8A6A /* HomeViewController.swift */,
+				F566280C20E1B2B2003CD502 /* AmortizationViewController.swift */,
+				F53A589520E55F94005AA79E /* GraphViewController.swift */,
+				F52136E820EAEFE500D034C3 /* SavedDataViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F566280F20E1B2FB003CD502 /* Helping */ = {
+			isa = PBXGroup;
+			children = (
+				F55CE33120DF3E540076BFAF /* GradientView.swift */,
+				F55CE33320DF40DA0076BFAF /* Helpers.swift */,
+			);
+			path = Helping;
+			sourceTree = "<group>";
+		};
 		F5A2903320DC821B009E8A6A = {
 			isa = PBXGroup;
 			children = (
 				F5A2903E20DC821B009E8A6A /* LoanCalculator */,
 				F5A2903D20DC821B009E8A6A /* Products */,
+				0A8F56B638CD0573B8BE440E /* Pods */,
+				E84F0530C5D6394EA69D119C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +149,22 @@
 		F5A2903E20DC821B009E8A6A /* LoanCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				F566280E20E1B2E2003CD502 /* ViewControllers */,
+				F566280F20E1B2FB003CD502 /* Helping */,
 				F5A2903F20DC821B009E8A6A /* AppDelegate.swift */,
-				F5A2904120DC821B009E8A6A /* ViewController.swift */,
+				F566281020E27DEB003CD502 /* PersistenceService.swift */,
 				F5A2904320DC821B009E8A6A /* Main.storyboard */,
+				F52136EC20EB008D00D034C3 /* SavedDataTableViewCell.swift */,
+				F53A588F20E3136D005AA79E /* AmortizationTableViewCell.swift */,
 				F5A2904920DC821D009E8A6A /* Assets.xcassets */,
 				F5A2904B20DC821D009E8A6A /* LaunchScreen.storyboard */,
 				F5A2904E20DC821D009E8A6A /* Info.plist */,
+				F52136F420ED501B00D034C3 /* SavedData+CoreDataClass.swift */,
+				F52136F520ED501B00D034C3 /* SavedData+CoreDataProperties.swift */,
+				F52136F020ED336C00D034C3 /* TimesOpened+CoreDataClass.swift */,
+				F52136F120ED336C00D034C3 /* TimesOpened+CoreDataProperties.swift */,
+				F53A588920E28DBF005AA79E /* UserData+CoreDataClass.swift */,
+				F53A588A20E28DBF005AA79E /* UserData+CoreDataProperties.swift */,
 				F5A2904620DC821B009E8A6A /* LoanCalculator.xcdatamodeld */,
 			);
 			path = LoanCalculator;
@@ -74,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5A2905120DC821D009E8A6A /* Build configuration list for PBXNativeTarget "LoanCalculator" */;
 			buildPhases = (
+				B9175E1E4B53DA1EC15020E4 /* [CP] Check Pods Manifest.lock */,
 				F5A2903820DC821B009E8A6A /* Sources */,
 				F5A2903920DC821B009E8A6A /* Frameworks */,
 				F5A2903A20DC821B009E8A6A /* Resources */,
+				1CEF929426964905F2D58C2B /* [CP] Embed Pods Frameworks */,
+				F53A589420E54ED8005AA79E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +239,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CEF929426964905F2D58C2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LoanCalculator/Pods-LoanCalculator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LoanCalculator/Pods-LoanCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9175E1E4B53DA1EC15020E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoanCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5A2903820DC821B009E8A6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A2904220DC821B009E8A6A /* ViewController.swift in Sources */,
+				F52136E920EAEFE500D034C3 /* SavedDataViewController.swift in Sources */,
+				F566281120E27DEB003CD502 /* PersistenceService.swift in Sources */,
+				F5A2904220DC821B009E8A6A /* HomeViewController.swift in Sources */,
+				F52136F320ED336C00D034C3 /* TimesOpened+CoreDataProperties.swift in Sources */,
+				F52136ED20EB008D00D034C3 /* SavedDataTableViewCell.swift in Sources */,
+				F55CE33420DF40DA0076BFAF /* Helpers.swift in Sources */,
+				F55CE33220DF3E540076BFAF /* GradientView.swift in Sources */,
+				F53A589020E3136D005AA79E /* AmortizationTableViewCell.swift in Sources */,
+				F52136F720ED501B00D034C3 /* SavedData+CoreDataProperties.swift in Sources */,
+				F53A588B20E28DBF005AA79E /* UserData+CoreDataClass.swift in Sources */,
+				F52136F620ED501B00D034C3 /* SavedData+CoreDataClass.swift in Sources */,
 				F5A2904020DC821B009E8A6A /* AppDelegate.swift in Sources */,
+				F53A588C20E28DBF005AA79E /* UserData+CoreDataProperties.swift in Sources */,
+				F52136F220ED336C00D034C3 /* TimesOpened+CoreDataClass.swift in Sources */,
+				F53A589620E55F94005AA79E /* GraphViewController.swift in Sources */,
+				F566280D20E1B2B2003CD502 /* AmortizationViewController.swift in Sources */,
 				F5A2904820DC821B009E8A6A /* LoanCalculator.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,10 +443,16 @@
 		};
 		F5A2905220DC821D009E8A6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F83E4757EDE27191AA660F12 /* Pods-LoanCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PWADLCZKVJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TextFieldEffects\"/**",
+				);
 				INFOPLIST_FILE = LoanCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,17 +460,25 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.EdwinOmeara.LoanCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F5A2905320DC821D009E8A6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6EF0070642CC57566594596 /* Pods-LoanCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PWADLCZKVJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)/**",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/TextFieldEffects\"/**",
+				);
 				INFOPLIST_FILE = LoanCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,8 +486,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.EdwinOmeara.LoanCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
