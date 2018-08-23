@@ -21,7 +21,7 @@
 		F53A589620E55F94005AA79E /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53A589520E55F94005AA79E /* GraphViewController.swift */; };
 		F53A589820E55FBF005AA79E /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53A589720E55FBF005AA79E /* Charts.framework */; };
 		F55CE33220DF3E540076BFAF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55CE33120DF3E540076BFAF /* GradientView.swift */; };
-		F55CE33420DF40DA0076BFAF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55CE33320DF40DA0076BFAF /* Helpers.swift */; };
+		F55CE33420DF40DA0076BFAF /* ForConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55CE33320DF40DA0076BFAF /* ForConstraints.swift */; };
 		F566280D20E1B2B2003CD502 /* AmortizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F566280C20E1B2B2003CD502 /* AmortizationViewController.swift */; };
 		F566281120E27DEB003CD502 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F566281020E27DEB003CD502 /* PersistenceService.swift */; };
 		F5A2904020DC821B009E8A6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2903F20DC821B009E8A6A /* AppDelegate.swift */; };
@@ -61,7 +61,7 @@
 		F53A589520E55F94005AA79E /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		F53A589720E55FBF005AA79E /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55CE33120DF3E540076BFAF /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		F55CE33320DF40DA0076BFAF /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		F55CE33320DF40DA0076BFAF /* ForConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForConstraints.swift; sourceTree = "<group>"; };
 		F566280C20E1B2B2003CD502 /* AmortizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationViewController.swift; sourceTree = "<group>"; };
 		F566281020E27DEB003CD502 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		F5A2903C20DC821B009E8A6A /* LoanCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoanCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +108,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F51EF00D212E33B5003322C2 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F566281020E27DEB003CD502 /* PersistenceService.swift */,
+				F52136F420ED501B00D034C3 /* SavedData+CoreDataClass.swift */,
+				F52136F520ED501B00D034C3 /* SavedData+CoreDataProperties.swift */,
+				F52136F020ED336C00D034C3 /* TimesOpened+CoreDataClass.swift */,
+				F52136F120ED336C00D034C3 /* TimesOpened+CoreDataProperties.swift */,
+				F53A588920E28DBF005AA79E /* UserData+CoreDataClass.swift */,
+				F53A588A20E28DBF005AA79E /* UserData+CoreDataProperties.swift */,
+				F5A2904620DC821B009E8A6A /* LoanCalculator.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		F566280E20E1B2E2003CD502 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,13 +134,15 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		F566280F20E1B2FB003CD502 /* Helping */ = {
+		F566280F20E1B2FB003CD502 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F53A588F20E3136D005AA79E /* AmortizationTableViewCell.swift */,
+				F52136EC20EB008D00D034C3 /* SavedDataTableViewCell.swift */,
 				F55CE33120DF3E540076BFAF /* GradientView.swift */,
-				F55CE33320DF40DA0076BFAF /* Helpers.swift */,
+				F55CE33320DF40DA0076BFAF /* ForConstraints.swift */,
 			);
-			path = Helping;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F5A2903320DC821B009E8A6A = {
@@ -149,23 +166,14 @@
 		F5A2903E20DC821B009E8A6A /* LoanCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				F51EF00D212E33B5003322C2 /* CoreData */,
 				F566280E20E1B2E2003CD502 /* ViewControllers */,
-				F566280F20E1B2FB003CD502 /* Helping */,
+				F566280F20E1B2FB003CD502 /* Helpers */,
 				F5A2903F20DC821B009E8A6A /* AppDelegate.swift */,
-				F566281020E27DEB003CD502 /* PersistenceService.swift */,
 				F5A2904320DC821B009E8A6A /* Main.storyboard */,
-				F52136EC20EB008D00D034C3 /* SavedDataTableViewCell.swift */,
-				F53A588F20E3136D005AA79E /* AmortizationTableViewCell.swift */,
 				F5A2904920DC821D009E8A6A /* Assets.xcassets */,
 				F5A2904B20DC821D009E8A6A /* LaunchScreen.storyboard */,
 				F5A2904E20DC821D009E8A6A /* Info.plist */,
-				F52136F420ED501B00D034C3 /* SavedData+CoreDataClass.swift */,
-				F52136F520ED501B00D034C3 /* SavedData+CoreDataProperties.swift */,
-				F52136F020ED336C00D034C3 /* TimesOpened+CoreDataClass.swift */,
-				F52136F120ED336C00D034C3 /* TimesOpened+CoreDataProperties.swift */,
-				F53A588920E28DBF005AA79E /* UserData+CoreDataClass.swift */,
-				F53A588A20E28DBF005AA79E /* UserData+CoreDataProperties.swift */,
-				F5A2904620DC821B009E8A6A /* LoanCalculator.xcdatamodeld */,
 			);
 			path = LoanCalculator;
 			sourceTree = "<group>";
@@ -290,7 +298,7 @@
 				F5A2904220DC821B009E8A6A /* HomeViewController.swift in Sources */,
 				F52136F320ED336C00D034C3 /* TimesOpened+CoreDataProperties.swift in Sources */,
 				F52136ED20EB008D00D034C3 /* SavedDataTableViewCell.swift in Sources */,
-				F55CE33420DF40DA0076BFAF /* Helpers.swift in Sources */,
+				F55CE33420DF40DA0076BFAF /* ForConstraints.swift in Sources */,
 				F55CE33220DF3E540076BFAF /* GradientView.swift in Sources */,
 				F53A589020E3136D005AA79E /* AmortizationTableViewCell.swift in Sources */,
 				F52136F720ED501B00D034C3 /* SavedData+CoreDataProperties.swift in Sources */,
