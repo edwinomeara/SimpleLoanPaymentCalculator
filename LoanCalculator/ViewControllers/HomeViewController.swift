@@ -19,16 +19,11 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
     @IBOutlet weak var dpErrorConstraint: NSLayoutConstraint!
     @IBOutlet weak var backgroundButton: UIButton!
     @IBOutlet weak var errorViewConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var savenameBackgroundButton: UIButton!
-    
     @IBOutlet weak var savedNameConstraint: NSLayoutConstraint!
     @IBOutlet weak var saveNameView: UIView!
     @IBOutlet weak var savedNameButton: UIButton!
     @IBOutlet weak var savedNameText: UITextField!
-    
-    
-    
     @IBOutlet weak var gradientBackgroundView: UIView!
     @IBOutlet weak var dpErrorView: UIView!
     @IBOutlet weak var dpErrorButton: UIButton!
@@ -54,7 +49,6 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
     @IBOutlet weak var durationButton: UIButton!
     var durationButtonCenter: CGPoint!
     @IBOutlet weak var downPaymentView: UIView!
-    
     @IBOutlet weak var loanAmountView: UIView!
     @IBOutlet weak var interestRateView: UIView!
     @IBOutlet weak var yearView: UIView!
@@ -70,7 +64,6 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let fetchRequest: NSFetchRequest<UserData> = UserData.fetchRequest()
         do {
             let dataList = try PersistenceService.context.fetch(fetchRequest)
@@ -145,6 +138,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
         } catch{}
     }
     
+    //Resets all input values 
     @IBAction func resetTapped(_ sender: Any) {
         deletePresentData()
         loanText.text = ""
@@ -212,7 +206,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
     }
     
     //--------------------------Buttons/HoshiText/toolbar-----------------------
-    
+    //TextfieldEffects used with custom colors and sizes.  Also allows movement of texfields
     @IBAction func durationClicked(_ sender: Any) {
         if durationButton.backgroundColor == #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1) {
             durationButtonOpened()
@@ -236,8 +230,6 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
         UIView.animate(withDuration: 0.4, animations: {
             self.yearView.alpha = 0
             self.monthView.alpha = 0
-           // self.yearView.center = self.durationButton.center
-           // self.monthView.center = self.durationButton.center
             self.yearView.center = CGPoint(x: 187, y: -50)
             self.monthView.center = CGPoint(x: 187, y: -50)
             self.durationButton.backgroundColor = #colorLiteral(red: 0.2, green: 0.2, blue: 0.2, alpha: 1)
@@ -270,9 +262,6 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
             self.monthlyButton.alpha = 0
             self.quarterlyButton.alpha = 0
             self.yearlyButton.alpha = 0
-//            self.yearlyButton.center = self.paymentFrequencyButton.center
-//            self.monthlyButton.center = self.paymentFrequencyButton.center
-//            self.quarterlyButton.center = self.paymentFrequencyButton.center
             self.monthlyButton.center = CGPoint(x: 187, y: -20)
             self.quarterlyButton.center = CGPoint(x: 187, y: -20)
             self.yearlyButton.center = CGPoint(x: 187, y: -20)
@@ -285,6 +274,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
         getValues()
         findIfDivisible()
         
+        //checks if the backgrounds of the button is a certain color and if it is pressed changes to a different color
         if monthlyButton.backgroundColor == #colorLiteral(red: 0.2352941176, green: 0.2352941176, blue: 0.2352941176, alpha: 1) {
             monthlyButton.backgroundColor = #colorLiteral(red: 0.2196078431, green: 0.9764705882, blue: 0.9450980392, alpha: 1)
             monthlyButton.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
@@ -300,6 +290,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
         getValues()
         findIfDivisible()
         
+         //checks if the backgrounds of the button is a certain color and if it is pressed changes to a different color
         if quarterlyButton.backgroundColor == #colorLiteral(red: 0.2352941176, green: 0.2352941176, blue: 0.2352941176, alpha: 1) {
             quarterlyButton.backgroundColor = #colorLiteral(red: 0.2196078431, green: 0.9764705882, blue: 0.9450980392, alpha: 1)
             quarterlyButton.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
@@ -315,6 +306,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
         getValues()
         findIfDivisible()
         
+         //checks if the backgrounds of the button is a certain color and if it is pressed changes to a different color
         if yearlyButton.backgroundColor == #colorLiteral(red: 0.2352941176, green: 0.2352941176, blue: 0.2352941176, alpha: 1)  {
             yearlyButton.backgroundColor = #colorLiteral(red: 0.2196078431, green: 0.9764705882, blue: 0.9450980392, alpha: 1)
             yearlyButton.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
@@ -397,10 +389,11 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
         }
 
     }
-    
+    //sets corner radius, color, border width, and positions
     func setViews(){
         
         savedNameText.inputAccessoryView = createToolBar()
+        
         saveNameView.layer.cornerRadius = 15
         savedNameButton.layer.cornerRadius = 15
         savedNameButton.layer.borderWidth = 1
@@ -408,23 +401,16 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
         
         yearViewCenter = yearView.center
         monthViewCenter = monthView.center
-        
         yearView.center = CGPoint(x: 187, y: -50)
         monthView.center = CGPoint(x: 187, y: -50)
         
         yearlyButtonCenter = yearlyButton.center
         quarterlyButtonCenter = quarterlyButton.center
         monthlyButtonCenter = monthlyButton.center
-       
-       // print(paymentFrequencyButton.center)
         
-       // monthlyButton.center = paymentFrequencyButton.center
-        // quarterlyButton.center = paymentFrequencyButton.center
-        //yearlyButton.center = paymentFrequencyButton.center
         monthlyButton.center = CGPoint(x: 187, y: -20)
         quarterlyButton.center = CGPoint(x: 187, y: -20)
         yearlyButton.center = CGPoint(x: 187, y: -20)
-      
         
         monthlyButton.layer.cornerRadius = 15
         quarterlyButton.layer.cornerRadius = 15
@@ -439,6 +425,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
         errorButton.layer.borderColor = #colorLiteral(red: 0.370555222, green: 0.3705646992, blue: 0.3705595732, alpha: 1)
         
         dpErrorView.layer.cornerRadius = 15
+        
         dpErrorButton.layer.borderColor = #colorLiteral(red: 0.370555222, green: 0.3705646992, blue: 0.3705595732, alpha: 1)
         dpErrorButton.layer.cornerRadius = 15
         dpErrorButton.layer.borderWidth = 1
@@ -566,6 +553,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
         
     }
     
+    //if the user tries to calculate an improper calculations error pop up appears
     func findIfDivisible(){
         var theMonths = 0
         if monthChosen.text != "" {
@@ -604,14 +592,13 @@ class HomeViewController: UIViewController, UIScrollViewDelegate,  UIPickerViewD
       
     }
     
+    
     func calculate(loan: Double, interest: Double, paymentFreq: Int, years: Int, months: Int, extraPayment: Double){
         
         if loan == 0 || interest == 0 || paymentFreq == 0 || (years == 0 && months == 0 ){
             paymentLabel.text = "$0.00"
             interestLabel.text = "$0.00"
             totalPaidLabel.text = "$0.00"
-           
-            
             return
         }
         
