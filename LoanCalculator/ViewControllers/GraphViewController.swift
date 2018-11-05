@@ -70,7 +70,7 @@ class GraphViewController: UIViewController {
     
     var counter = 0
     var startValue: Double = 0
-    let endValue: Double = 1000//"i hope this works"
+    let endValue: Double = 1000
     var animationDuration: Double = 0.01
     var animationStartDate = Date()
     var messageArray = ["%", " ", "o", "f", " ","t", "h","e"," ", "t","o","t", "a", "l",
